@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Chrisnico</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body id="body">
+    <div class="container">
+      <center>
+        <input id="cur" type="hidden" value="1">
+        <button id="theme" onclick="theme()"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+          <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+        </svg></button>
+      </center>
+      <header>
+        <img alt="My foto" src="../asset/fotobg.png" />
+        <h1><span id="hai">Hi I am</span> 
+          <br>
+          <span id="name">Chrisnico Alexander H</span><br> <span id="nim">Profesional Football ⚽</span></h1>
+      </header>
+      <div class="nav">
+        <a href="#nav1"><h3><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+          <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
+        </svg><br/>Home</h3></a>
+        <a href="#nav2"><h3><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
+        <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+          <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+        </svg><br/>About Me</h3></a>
+        <a href="#nav3"><h3><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
+          <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+          <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+          <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+        </svg><br/>Experience</h3></a>
+        <a href="#nav4"><h3><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+          <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
+        </svg><br/>Contact</h3></a>
+      </div>
+        <h3 id="nav2" class="judul">Tentang saya</h3>
+        <div class="about">
+          <p>Hai perkenalkan nama saya Chrisnico Alexander Hutapea saya adalah seorang mahasiswa dari institut teknologi sumatera, saya merupakan mahasiswa dari prodi teknik informatika dan saya ingin menjadi seorang developer wensite pengalaman saya saat ini adalah banyak sekali di bidang olahraga contohnya saya pernah menjadi sayap kiri untuk barcelona dan saya pernah menjadi penyerang utama untuk bayern muchen saya harap kedepannya saya dapat bermain di club impian saya yaitu Rans Cilegon itu adalah mimpi dari segala pemain bola terbaik didunia</p>
+          <iframe src="https://www.youtube.com/embed/MlH4DE78dgI"></iframe>
+        </div>
+        <h3 id="nav3"class="judul">Pengalaman</h3>
+        <div class="cont">
+          <table border="1">
+                      <tr>
+                          <th rowspan="3">No</th>
+                          <th rowspan="3">Posisi</th>
+                          <th rowspan="3">Perusahaan</th>
+                              <tr>
+                                  <th colspan="2">waktu</th>
+                              </tr>
+                              <tr>
+                                  <th>mulai</th>
+                                  <th>selesai</th>
+                              </tr>
+                      </tr>
+                      <tr>
+                          <td>1</td>
+                          <td>Left Wing</td>
+                          <td>Barcelona</td>
+                          <td>2009</td>
+                          <td>2015</td>
+                      </tr>
+                      <tr>
+                          <td>2</td>
+                          <td>Center Forward</td>
+                          <td>Bayern Munchen</td>
+                          <td>2015</td>
+                          <td>2022</td>
+                      </tr>
+          </table>
+        </div>
+        <br>
+        <h3 id="nav4" class="judul">Hubungi Saya</h3>
+        <div class="form">
+          <form>
+              <div class="name">
+                  <label for="name">Nama :</label>
+                  <input type="hidden" value="1" id="darknama">
+                  <input class="darktheme1" type="text" id="nama">
+              </div>
+              <br>
+              <div class="radio">
+                  <label >Sudah menonton film saya?</label>
+                  <br>
+                  <input type="radio" name="film" id="film1">Sudah
+                  <br>
+                  <input type="radio" name="film" id="film2">Belom
+              </div>
+              <br>
+              <div class="check">
+                <label>Club :</label>
+                <br>
+                  <input type="checkbox" name="check" id="check1">FCB
+                  <br>
+                  <input type="checkbox" name="check" id="check2">RMA
+                  <br>
+                  <input type="checkbox" name="check" id="check3">SEV
+              </div>
+              <button>Kirim</button>
+          </form>
+        </div>
+        <footer><h3>Chrisnico | 2020</h3></footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

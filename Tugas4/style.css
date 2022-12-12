@@ -1,0 +1,162 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.darktheme {
+  background-color: white;
+  color: black;
+}
+.darktheme1 {
+  background-color: #191919;
+  color: white;
+}
+
+#theme {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #3edad8;
+  color: #3edad8;
+  width: 100px;
+  cursor: pointer;
+}
+
+body {
+  background-color: #191919;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #3edad8;
+  text-align: center;
+}
+
+.nav {
+  max-width: 800px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 50px;
+  border: 3px solid #3edad8;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.about p {
+  text-align: justify;
+  margin: 15px;
+}
+
+table {
+  width: 800px;
+  border-collapse: collapse;
+  margin: 0 auto;
+  border-color: #3edad8;
+}
+
+.cont {
+  overflow-x: auto;
+}
+
+iframe {
+  border-color: #3edad8;
+  width: 90%;
+  height: 250px;
+  margin: 0 auto;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.judul {
+  color: #3edad8;
+}
+
+#hai {
+  font-size: 20px;
+  color: #3edad8;
+}
+
+#name {
+  font-size: 40px;
+  font-weight: bold;
+}
+#nama {
+  width: 100%;
+  height: 30px;
+  border-color: #3edad8;
+}
+
+#nim {
+  color: #3edad8;
+}
+
+.form label {
+  font-size: 20px;
+}
+.form button {
+  width: 100%;
+  background-color: #3edad8;
+  height: 30px;
+}
+
+.form {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #3edad8;
+}
+
+header h1 {
+  padding-top: 40%;
+}
+
+header img {
+  width: 400px;
+}
+
+footer {
+  height: 30px;
+  width: 100%;
+  background-color: #3edad8;
+  color: black;
+  justify-items: center;
+}
+
+footer h3 {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .about {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  header img {
+    width: 250px;
+  }
+  #hai {
+    font-size: 20px;
+    color: #3edad8;
+  }
+
+  #name {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  #nim {
+    color: #3edad8;
+    font-size: 20px;
+  }
+  .nav {
+    max-width: 400px;
+    height: 70px;
+    font-size: small;
+  }
+}
