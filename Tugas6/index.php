@@ -1,6 +1,24 @@
 <?php
  $input = $_POST['number'];
- echo $input;
+ $array = array(1000,900,500,400,100,90,50,40,10,9,5,4,1);
+ $romawi = array("M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I");
+ $result = '';
+ $index = 0;
+for ($j = 0; $j < count($array); $j ++) {
+  if($input/$array[$j] >= 1){
+    $temp = $input % $array[$j];
+    $cur .= intval($input / $array[$j]);
+    for ($i = 0; $i < $cur;$i ++){
+      $result .= $romawi[$j];
+    }
+    if($temp === 0){
+      break;
+    }
+    $input = $temp;
+    $j = 0;
+    $cur = 0; 
+  }
+}
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +39,7 @@
   <body>
     <div class="container">
       <div class="output">
-        <h1 id="hasil">Hasil : </h1>
+        <h1 id="hasil">Hasil : <?php echo $result ?></h1>
       </div>
       <div class="input">
         <center>
